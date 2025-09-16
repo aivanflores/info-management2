@@ -14,11 +14,14 @@ while True:
         print("Bye!")
         break
 
-    num = int(dollar)
-    r = rupee(num)
-    p = pound(num)
-    y = yen(num)
-    display.append((num, r, p, y))
+    set = dollar.split('@')
+
+    for num in set:
+        num = int(num)  
+        r = rupee(num)
+        p = pound(num)
+        y = yen(num)
+        display.append((num, r, p, y))
 
     print("Dollar ($) Indian Ruppe (R)  British (Pound)  China (Y)")
     for d, r1, p1, y1 in display:
