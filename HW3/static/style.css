@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile-card {
+    max-width: 500px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: scale(1.01);
+}
+
+.profile-header {
+    position: relative;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3b82f6;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #e5e7eb;
+    transition: 0.3s ease;
+}
+
+.photo-placeholder img:hover {
+    transform: scale(1.05);
+    border-color: #3b82f6;
+}
+
+h2 {
+    color: #1e3a8a;
+}
+
+.btn-outline-primary {
+    border-radius: 25px;
+}
+
+.photo-square {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #e5e7eb;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.photo-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.photo-square:hover img {
+    transform: scale(1.05);
+}
